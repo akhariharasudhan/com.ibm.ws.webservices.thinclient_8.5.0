@@ -1,0 +1,1 @@
+# com.ibm.ws.webservices.thinclient_8.5.0
