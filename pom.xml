@@ -3,21 +3,18 @@
 
   <groupId>com.ibm.teams</groupId>
   <artifactId>com.ibm.ws.webservices.thinclient_8.5.0</artifactId>
-  <version>8.5.0</version>
+  <version>0.0.1</version>
   <packaging>jar</packaging>
   
-  <scm>
-	<connection>scm:git:git://github.com/akhariharasudhan/com.ibm.ws.webservices.thinclient_8.5.0.git</connection>
-	<developerConnection>scm:git:git@github.com/akhariharasudhan/com.ibm.ws.webservices.thinclient_8.5.0.git</developerConnection>
-	<url>https://github.com/akhariharasudhan/com.ibm.ws.webservices.thinclient_8.5.0.git</url>
-	<tag>com.ibm.ws.webservices.thinclient</tag>
+ <scm>
+<connection>scm:git:ssh://git@github.ibm.com:gebasker/sonatype-jars.git</connection>
+<developerConnection>scm:git:ssh://git@github.ibm.com:gebasker/sonatype-jars.git</developerConnection>
+<url>https://github.com/gebasker/sonatype-jars</url>
+<tag>com.ibm.ws.webservices.thinclient_8.5.0-0.0.1</tag>
 </scm>
-
-  <name>com.ibm.ws.webservices.thinclient</name>
-  <url>http://maven.apache.org</url>
-  <build>
-  	<plugins>
-				<plugin>
+<build>
+<plugins>
+<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>2.3.2</version>
@@ -89,12 +86,24 @@
 					     <autoReleaseAfterClose>true</autoReleaseAfterClose>
 					  </configuration>
 					</plugin>
-			    
-  			</plugins>
-  </build>
-   <properties>
+					</plugins>
+					</build>  
+
+  <name>com.ibm.ws.webservices.thinclient_8.5.0</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
   
   <distributionManagement>
   <snapshotRepository>
@@ -106,8 +115,4 @@
     <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
   </repository>
 </distributionManagement>
-
-  <dependencies>
-    
-  </dependencies>
 </project>
